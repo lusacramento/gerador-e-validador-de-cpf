@@ -120,7 +120,7 @@ public class Cpf {
                 cpfPrinted += "-";
             }
         }
-        System.out.println(cpfPrinted);
+        System.out.printf("%s%n", cpfPrinted);
     } // fim do método printCpf
 
     // Gera um prefixo (9 dígitos iniciais sem os dígitos verificadores) aleatório
@@ -160,15 +160,14 @@ public class Cpf {
         this.assistant.add(this.vD2);
 
         if (getAssistant().get(9) == getvD1() && getAssistant().get(10) == getvD2()) {
-            System.out.println("CPF VÁLIDO");
+            System.out.printf("CPF VÁLIDO%n");
         } else {
-            System.out.println("CPF INVÁLIDO");
+            System.out.printf("CPF INVÁLIDO%n");
         }
 
-        System.out.printf("CPF de Entrada: ");
-        printCpf(this.original);
+        System.out.printf("CPF de Entrada: %s.%n", this.original);
         System.out.println();
-        System.out.printf("CPF Validado:   ");
+        System.out.printf("CPF Validado: %s.%n");
         printCpf(this.assistant);
 
     } // fim do método verifyValidCpf
