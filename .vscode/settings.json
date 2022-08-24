@@ -1,8 +1,6 @@
 {
-    "java.project.sourcePaths": ["src"],
-    "java.project.outputPath": "bin",
-    "java.project.referencedLibraries": [
-        "lib/**/*.jar"
-    ],
-    "nuxt.isNuxtApp": false
+    "nuxt.isNuxtApp": false,
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "editor.tabCompletion": "on",
+    "diffEditor.codeLens": true
 }
